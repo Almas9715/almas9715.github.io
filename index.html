@@ -5,6 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>《江格尔》汉译本书架</title>
   <style>
+    .shelf-header {
+  margin-bottom: 28px;
+  padding: 20px 0 16px;
+  border-bottom: 1px solid #cfc2ac;
+}
+.shelf-header h1 {
+  margin: 0;
+  font-size: clamp(1.35rem, 4vw, 2rem);
+}
+.bookshelf figure {
+  padding: 10px;
+  border: 1px solid #ded4c4;
+  border-radius: 10px;
+  background: #fffdf8;
+}
+.bookshelf figure a {
+  display: block;
+  border-radius: 5px;
+}
+.bookshelf figure a:focus-visible,
+.back-to-top:focus-visible {
+  outline: 2px solid #7c4934;
+  outline-offset: 3px;
+}
+.back-to-top {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #654434;
+  color: white;
+  text-decoration: none;
+}
     body {
       margin: 0;
       background: #f7f4ed;
@@ -33,7 +66,9 @@
 </head>
 <body>
   <main>
-    <h1>《江格尔》汉译本书架</h1>
+    <header class="shelf-header" id="top">
+  <h1>《江格尔》汉译本书架</h1>
+</header>
     <div class="bookshelf">
     <figure>
       <a href="https://url09.ctfile.com/s/29a2883f7a454ebcda6226afcec82266?p=almas9715">
@@ -160,6 +195,7 @@
   <figcaption>《中华民族文库》</figcaption>
 </figure>
     </div>
+    <a class="back-to-top" href="#top">返回顶部 ↑</a>
   </main>
 </body>
 </html>
